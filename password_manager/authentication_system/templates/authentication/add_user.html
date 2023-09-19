@@ -1,0 +1,15 @@
+{% extends 'authentication/index.html' %}
+
+{% block content %}
+<form action="" method=POST>
+    {% csrf_token %}
+
+    {{ form.as_p }}
+
+    <input type="submit" value="Submit" class="btn btn-secondary">
+
+</form>
+
+<a href="{% url 'show-record' %}">show all users</a>
+
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends 'authentication/index.html' %}
+
+{% block content %}
+
+{% for val in data %}
+
+{{val.first_name}}
+<br/>
+{{val.last_name}}
+<br/>
+{{val.web}}
+<br/>
+{{val.email}}
+<br/>
+<br/>
+
+{% endfor %}
+
+{% endblock %}
